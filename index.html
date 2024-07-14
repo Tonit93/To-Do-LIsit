@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Учет расходов </h1>
- <input class="js-input" 
- type="number">
- <button class="js-button">Добавить</button>
-  <script src="main.js"></script>
+    <div class="wrapper">
+        <div class="containerMoveLIst">
+            <div class="header">
+                <div class="header__name-film">список фильмов</div>
+                <div class="header__ears">2024</div>
+            </div>
+            <h1 class="mainTitle">Move List</h1>
+            <div class="wraper__container">
+                <form class="formMoveList js_formMoveList">
+                    <input type="text" placeholder="Добавить фильм" name="TaskMoveList" autocomplete="off">
+
+                    <button class="submit"></button>
+                    <hr class="hr-line">
+                </form>
+                <ul class="js_list">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+
 </body>
+
 </html>

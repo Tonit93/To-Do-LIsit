@@ -1,68 +1,220 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid red; */
+* {
+    font-family: Arimo;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
 }
-body{
-  color: #ffffff;
 
-}
-.container{
-border: 0.25vh solid black;
-  background-color: aqua;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content:center ;
+body {
+    font-family: Arimo;
+    background-color: #181818;
 
 }
 
-.item{
-  color: inherit;
-  background-color: rgb(0, 0, 0);
-  margin: 10px 2px 10px 0;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  /* border: 1px solid red; */
+.wrapper {
+    display: flex;
+    margin-left: 329px;
 }
-.item-2{
-  background-color: rgb(0, 0, 0);
-  margin: 10px 2px 10px 0;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  /* border: 1px solid red; */
+
+.containerMoveLIst {
+
+    margin-top: 74px;
+    height: 166px;
+    font-family: Arimo;
+    font-weight: 400;
+
 }
-.item-3{
-  background-color: rgb(0, 0, 0);
-  margin: 10px 2px 10px 0;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
- }
-.item-4{
-  background-color: rgb(0, 0, 0);
-  margin: 10px 2px 10px 0;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  /* border: 1px solid red; */
+
+.header {
+    display: flex;
+}
+
+.header__name-film {
+    width: 183px;
+    height: 30px;
+    left: 328px;
+    top: 80px;
+    background-color: #6532F8;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header__ears {
+    margin-left: 3px;
+    width: 75px;
+    height: 30px;
+    left: 511px;
+    top: 80px;
+    background-color: #6532F8;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainTitle {
+
+    color: #F3F6F9;
+    font-family: Arimo;
+    font-size: 120.42px;
+    font-weight: 400;
+    line-height: 138px;
+    letter-spacing: -4%;
+    text-align: left;
+}
+
+.submit {
+    margin: 98px 0 0 198px;
+    background-image: url(/img/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #6532F8;
+    width: 62px;
+    height: 62px;
+    border-radius: 50px;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.submit:hover {
+    background-color: #6b1464;
+}
+
+.hr-line {
+    width: 411px;
+    height: 0;
+    left: 334px;
+    top: 384.5px;
+    border: 1px solid rgb(243, 246, 249);
+    opacity: 0.5;
+    margin: 14px 0 0 79px
+        /* border-top: 1px solid #F3F6F9; */
+}
+
+input {
+    width: 238px;
+    height: 25px;
+    background-color: #232323;
+    border: none;
+    margin-left: 83px;
+    font-family: Arimo;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -2%;
+    /* flex-grow: 1; */
+
+}
+
+input:focus {
+    outline: none;
+
+}
+:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+.wraper__container {
+    margin-top: 45px;
+    border-radius: 20px;
+    background-color: #232323;
+    width: 930px;
+    height: 986px;
+    left: 255px;
+    top: 263px;
+}
+
+.form input {
+    outline: none;
+}
+
+.item {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: none;
+    width: 790px;
+    height: 71px;
+    left: 325px;
+    top: 425px;
+    background-color: #3A3939;
+    margin-bottom: 2px;
+}
+
+.item::after {
+  
+    background-color: #ffffff;
+}
+
+.TaskMoveList {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    flex-grow: 1;
+   
+}
+.TaskMoveList::after{
+    content: ""; 
+
+    position: absolute;
+    left: 0;
+
+    transform: translate(-50%);
+    width: 12px;
+    height: 12px;
+    border: 1px solid #F3F6F9;
+    border-radius: 50%;
+}
+
+
+.taskDone {
+    color: #9791a7;
+    text-decoration: line-through;
+}
+
+.taskDone::before{
+    content: " "; 
+
+    position: absolute;
+    left: 2px;
+
+    transform: translate(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: 1px solid #f700ff;
+    border-radius: 50%;
+
+}
+
+.buttonRemove {
+    margin-right: 20px;
+    background-image: url(/img/deletelist.png);
+    width: 23px;
+    height: 23px;
+    left: 1072px;
+    top: 449px;
+    background-repeat: no-repeat;
+    background-color: #3A3939;
+    border: none;
+}
+
+.buttonRemove:hover {
+    transition: 0.9s;
+    transform: scale(1.2);
+}
+
+.buttonRemove img {
+    pointer-events: none;
 }
